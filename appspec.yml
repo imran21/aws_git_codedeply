@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /a154.txt
     destination: /
 hooks:
   task1:
-    - location: cd_createfile.sh
+    - location: /scripts/cd_createfile.sh
       timeout: 300
       runas: root

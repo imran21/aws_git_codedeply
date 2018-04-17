@@ -5,6 +5,6 @@ files:
     destination: /
 hooks:
   task1:
-    - location: /scripts/cd_createfile.sh
-      timeout: 300
-      runas: root
+  - location: /scripts/cd_createfile.sh
+    timeout: 300
+    runas: root

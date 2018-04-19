@@ -3,8 +3,16 @@ os: linux
 files:
   - source: /a154.txt
     destination: /
+
+  - source: /b11.txt
+    destination: /
 hooks:
   BeforeInstall:
-  - location: /scripts/cd_createfile.sh
-    timeout: 300
-    runas: root
+   - location: /scripts/cd_createfile.sh
+     timeout: 300
+     runas: root
+
+  BeforeInstall:
+   - location: /scripts/cd_removefile.sh
+     timeout: 300
+     runas: root

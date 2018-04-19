@@ -11,8 +11,8 @@ hooks:
    - location: /scripts/cd_createfile.sh
      timeout: 300
      runas: root
-
-  task1:
+     
+  BeforeInstall:
    - location: /scripts/cd_removefile.sh
      timeout: 300
      runas: root
